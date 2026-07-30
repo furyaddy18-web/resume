@@ -25,6 +25,15 @@ TAVILY_API_KEY=st.sidebar.text_input("Tavily-API",type="password")
 GROQ_API_KEY = st.sidebar.text_input("Groq-API",type="password")
 api= st.sidebar.text_input("Google-API",type="password")
 
+all_API = [TAVILY_API_KEY, api ,gapi]
+
+if not all(all_API):
+    st.error("Must give API keys")
+    st.stop()
+elif all(all_API):
+    st.success("API keys Loaded Successfully")
+else: 
+    st.info("Pass all API-Keys")
 
 #model creation
 
