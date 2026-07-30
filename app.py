@@ -20,7 +20,7 @@ st.image("poster.png")
 #api keys
 TAVILY_API_KEY="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"
 GROQ_API_KEY = "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"
-GOOGLE_API_KEY = "AQ.Ab8RN6IPG00-mYR0tir7dCLzhFXdb9BdXO6TcUBKsW32Jfnyfg"
+api= "AQ.Ab8RN6IPG00-mYR0tir7dCLzhFXdb9BdXO6TcUBKsW32Jfnyfg"
 
 
 #model creation
