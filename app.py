@@ -17,6 +17,9 @@ st.set_page_config(layout="wide")
 st.title("AI RESUME GENERATOR")
 st.write("""this helps user to build customized proffesional resume with lateest job aplly list""")
 st.image("poster.png")
+
+st.sidebar.title("fill important Details")
+st.sidebar.image("poster.png")
 #api keys
 TAVILY_API_KEY="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"
 GROQ_API_KEY = "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"
