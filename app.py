@@ -1,7 +1,6 @@
 #Load Modules
 
 from langchain.agents import create_agent
-import langchain_community
 from tavily import TavilyClient
 import pytesseract as pyt
 import streamlit as st
@@ -14,6 +13,10 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
 import langchain
 
+st.set_page_config(layout="wide")
+st.title("AI RESUME GENERATOR")
+st.write("""this helps user to build customized proffesional resume with lateest job aplly list""")
+st.image("poster.png")
 #api keys
 TAVILY_API_KEY="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"
 GROQ_API_KEY = "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"
@@ -48,7 +51,7 @@ agent = create_agent(
     tools = [search_latest_news_jobs]
 )
 
-agent
+#agent
 
 #prompt to generate cv 
 
