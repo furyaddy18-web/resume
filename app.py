@@ -16,10 +16,10 @@ import langchain
 st.set_page_config(layout="wide")
 st.title("AI RESUME GENERATOR")
 st.write("""this helps user to build customized proffesional resume with lateest job aplly list""")
-st.image("poster.png")
+st.image("https://raw.githubusercontent.com/furyaddy18-web/resume/refs/heads/main/poster.png")
 
 st.sidebar.title("fill important Details")
-st.sidebar.image("poster.png")
+st.sidebar.image("https://raw.githubusercontent.com/furyaddy18-web/resume/refs/heads/main/poster.png")
 #api keys
 TAVILY_API_KEY=st.sidebar.text_input("Tavily-API",type="password")
 GROQ_API_KEY = st.sidebar.text_input("Groq-API",type="password")
